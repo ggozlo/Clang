@@ -7,7 +7,7 @@
 // 주함수, 진입함수, 유일한 함수
 int main() 
 {
-	printf("Hello World!!!");
+	printf("Hello World(git)!!!");
 
 	return (-1);
 }
