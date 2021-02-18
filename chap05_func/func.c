@@ -19,12 +19,9 @@ void main(void)
 	// printx(10.1f); // 자료소실 발생, 자료형을 일치 시켜야 함
 	int result = sum(50, 10); // 호출자(caller)
 	printx(result);
-
 	int result_minus = minus(10, 50);
 	printx(result_minus);
-
 	printx(minus(100, 30));
-
 }
 
 /*
@@ -40,7 +37,6 @@ int minus(int value1, int value2)
 {
 	int result = value1 - value2;
 	return result;
-
 	result = result + 99; // 죽은코드
 }
 
