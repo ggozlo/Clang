@@ -6,11 +6,11 @@
 
 void main()
 {
-	int a[20][20] = {0,};
+
 	int x ;
 	printf("높이를 지정하시오(홀수입력) :");
 	scanf("%d", &x);
- 	fflush(stdin);
+		int a[x+1][x+1];
  	
 	
 	int  cnt =0, i, j ;
@@ -24,14 +24,13 @@ void main()
 
 				if( x/2 - s < i && i < x/2 +s)
 				{
-					cnt ++ ;			
-					a[i][j] =cnt;
+					cnt ++  ;			
+					a[i][j] =cnt ;
 				}
 				else
 				{
-					continue;					
+					a[i][j] = 0;					
 				}
-
 
 			}
 			(j < x/2 )? s -- : s++ ;
